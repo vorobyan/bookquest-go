@@ -25,8 +25,8 @@ func main() {
 
 		// Create exemplar
 		firstAchievement := Achievement{
-			Name: "Первая ачивка",
-			XP:   10,
+			Name: "Git создан и привязан, спасибо Goland!",
+			XP:   15,
 		}
 
 		// Coding to JSON
