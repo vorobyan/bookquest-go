@@ -9,7 +9,10 @@ import (
 func main() {
 	// Route for main page
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("BookQuest стартует сегодня! 🔥"))
+		_, err := w.Write([]byte("BookQuest стартует сегодня! 🔥"))
+		if err != nil {
+			log.Fatal(err)
+		}
 	})
 
 	// Route for achievements
